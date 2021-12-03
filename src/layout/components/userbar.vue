@@ -67,19 +67,10 @@
 						id: 1,
 						type: 'user',
 						avatar: "img/avatar.gif",
-						title: "Skuya",
+						title: "zhangyao",
 						describe: "如果喜欢就点个星星支持一下哦",
-						link: "https://www.baidu.com",
+						link: "https://github.com/zhangyao1990/admin-vue3-elementplus",
 						time: "5分钟前"
-					},
-					{
-						id: 2,
-						type: 'user',
-						avatar: "img/avatar.gif",
-						title: "Lolowan",
-						describe: "点进去Gitee获取最新开源版本",
-						link: "https://www.baidu.com",
-						time: "14分钟前"
 					}
 				]
 			}
