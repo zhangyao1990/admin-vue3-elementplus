@@ -1,0 +1,320 @@
+/* 全局 */
+#app, body, html {
+	width: 100%;
+	height: 100%;
+	background-color: #f6f8f9;
+	font-size: 12px;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #000;
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:-webkit-any-link {
+	text-decoration: none;
+}
+
+a, button, input, textarea {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	box-sizing: border-box;
+	outline: none !important;
+	-webkit-appearance: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+/* 全局滚动条样式 */
+.scrollable {
+	-webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(50, 50, 50, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(50, 50, 50, 0.6);
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(50, 50, 50, 0.1);
+}
+
+::-webkit-scrollbar-track:hover {
+	background-color: rgba(50, 50, 50, 0.2);
+}
+
+/* 大布局样式 */
+.zyui {
+	display: flex;
+	flex-flow: column;
+}
+
+.zyui-wrapper {
+	display: flex;
+	flex: 1;
+	overflow: auto;
+}
+
+/*布局设置*/
+.layout-setting {
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	border-radius: 3px 0 0 3px;
+	bottom: 100px;
+	right: 0px;
+	z-index: 100;
+	background: #409EFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.layout-setting i {
+	font-size: 18px;
+	color: #fff;
+}
+
+/* 头部 */
+.zyui-header {
+	height: 60px;
+	background: #222b45;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.zyui-header-left {
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+}
+
+.zyui-header-right {
+	display: flex;
+	align-items: center;
+}
+
+.zyui-header .logo-bar {
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+}
+
+.zyui-header .logo-bar .logo {
+	margin-right: 10px;
+	width: 35px;
+}
+
+.zyui-header .nav {
+	display: flex;
+	height: 100%;
+	margin-left: 40px;
+}
+
+.zyui-header .nav li {
+	padding: 0 10px;
+	margin: 0 10px 0 0;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.6);
+	list-style: none;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.zyui-header .nav li i {
+	margin-right: 5px;
+}
+
+.zyui-header .nav li:hover {
+	color: #fff;
+}
+
+.zyui-header .nav li.active {
+	background: rgba(255, 255, 255, 0.1);
+	color: #fff;
+}
+
+.zyui-header .user-bar .panel-item:hover {
+	background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.zyui-header .user-bar .user label {
+	color: #fff;
+}
+
+.zyui-header-menu {
+}
+
+.zyui-header-menu .el-menu {
+	background: transparent;
+}
+
+.zyui-header-menu .el-menu .el-sub-menu__title {
+	color: #fff;
+}
+
+.zyui-header-menu .el-menu .el-sub-menu__title:hover {
+	color: #fff;
+	background: var(--el-color-primary-light-2);
+}
+
+.zyui-header-menu .el-menu .el-sub-menu.is-active .el-sub-menu__title {
+	color: #fff;
+	background: var(--el-color-primary-light-2);
+	border-bottom-color: transparent;
+}
+
+.zyui-header-menu .el-menu .el-menu-item {
+	color: #fff;
+}
+
+.zyui-header-menu .el-menu .el-menu-item:hover {
+	color: #fff;
+	background: var(--el-color-primary-light-2);
+}
+
+.zyui-header-menu .el-menu .el-menu-item.is-active {
+	color: #fff !important;
+	background: var(--el-color-primary-light-2);
+	border-bottom-color: transparent;
+}
+
+/* 左侧菜单 */
+.zyui-side-split {
+	width: 65px;
+	flex-shrink: 0;
+	background: #222b45;
+}
+
+.el-scrollbar__view {
+	overflow: auto;
+	overflow-x: hidden;
+	height: 100%;
+
+
+}
+
+.zyui-menu-columns {
+	width: 194px;
+	margin: 0 auto;
+	padding: 4px 0;
+	li {
+		border-radius: 6px;
+
+	}
+}
+
+.zyui-side-split li {
+	cursor: pointer;
+	width: 65px;
+	height: 65px;
+	color: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.zyui-side-split li i {
+	font-size: 18px;
+}
+
+.zyui-side-split li p {
+	margin-top: 5px;
+}
+
+.zyui-side-split li:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.zyui-side-split li.active {
+	background: #409EFF;
+}
+
+.zyui-side-split-scroll::-webkit-scrollbar-thumb {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+}
+
+.zyui-side-split-scroll::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.zyui-side-split-scroll::-webkit-scrollbar-track {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.zyui-side-split-scroll::-webkit-scrollbar-track:hover {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.zyui-side {
+	display: flex;
+	flex-flow: column;
+	flex-shrink: 0;
+	width: 210px;
+	background: #fff;
+	box-shadow: 2px 0 8px 0 rgba(29, 35, 41, .05);
+	border-right: 1px solid #e6e6e6;
+	transition: width 0.3s;
+}
+
+.zyui-side-top {
+	border-bottom: 1px solid #ebeef5;
+	height: 57px;
+	line-height: 57px;
+	margin-bottom: 4px;
+}
+
+.zyui-side-top h2 {
+	padding: 0 20px;
+	font-size: 17px;
+	color: #3c4a54;
+	text-align: center;
+}
+
+.zyui-side-scroll {
+	overflow: auto;
+	overflow-x: hidden;
+	flex: 1;
+}
+
+.zyui-side.isCollapse {
+	width: 0px;
+}
+.zyui-main {
+	overflow: auto;
+	background-color: #f6f8f9;
+	flex: 1;
+}
+.right-panel-search {
+	display: flex;
+}

@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "zyicon"; /* Project id 2975717 */
+  src: url('iconfont.woff2?t=1638242472396') format('woff2'),
+       url('iconfont.woff?t=1638242472396') format('woff'),
+       url('iconfont.ttf?t=1638242472396') format('truetype');
+}
+[class*="zy-icon-"] {
+	font-family: "zyicon" !important;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.zy-icon-email:before {
+  content: "\e601";
+}
+
+.zy-icon-dingdan:before {
+  content: "\e602";
+}
+
+.zy-icon-excel:before {
+  content: "\e603";
+}
+
+.zy-icon-edit:before {
+  content: "\e604";
+}
+
+.zy-icon-bug:before {
+  content: "\e605";
+}
+
+.zy-icon-logout:before {
+  content: "\e606";
+}
+
+.zy-icon-money:before {
+  content: "\e607";
+}
+
+.zy-icon-link:before {
+  content: "\e608";
+}
+
+.zy-icon-guide:before {
+  content: "\e609";
+}
+
+.zy-icon-language:before {
+  content: "\e60a";
+}
+
+.zy-icon-shangping:before {
+  content: "\e60b";
+}
+
+.zy-icon-huodong:before {
+  content: "\e60c";
+}
+
+.zy-icon-dashboard:before {
+  content: "\e60d";
+}
+
+.zy-icon-theme:before {
+  content: "\e60e";
+}
+
+.zy-icon-exit-fullscreen:before {
+  content: "\e60f";
+}
+
+.zy-icon-eye:before {
+  content: "\e610";
+}
+
+.zy-icon-drag:before {
+  content: "\e611";
+}
+
+.zy-icon-people:before {
+  content: "\e612";
+}
+
+.zy-icon-eye-open:before {
+  content: "\e613";
+}
+
+.zy-icon-size:before {
+  content: "\e614";
+}
+
+.zy-icon-pdf:before {
+  content: "\e615";
+}
+
+.zy-icon-shouhou:before {
+  content: "\e616";
+}
+
+.zy-icon-peoples:before {
+  content: "\e617";
+}
+
+.zy-icon-shezhi:before {
+  content: "\e618";
+}
+
+.zy-icon-lock:before {
+  content: "\e619";
+}
+
+.zy-icon-icon:before {
+  content: "\e61a";
+}
+
+.zy-icon-wuliu:before {
+  content: "\e61b";
+}
+
+.zy-icon-zip:before {
+  content: "\e61c";
+}
+
+.zy-icon-search:before {
+  content: "\e61d";
+}
+
+.zy-icon-user:before {
+  content: "\e61e";
+}
+
+.zy-icon-message:before {
+  content: "\e61f";
+}
+
+.zy-icon-qq:before {
+  content: "\e620";
+}
+
+.zy-icon-clipboard:before {
+  content: "\e621";
+}
+
+.zy-icon-zichan:before {
+  content: "\e622";
+}
+
+.zy-icon-qiye:before {
+  content: "\e623";
+}
+
+.zy-icon-wechat:before {
+  content: "\e624";
+}
+
+.zy-icon-password:before {
+  content: "\e625";
+}
+
+.zy-icon-a-404:before {
+  content: "\e626";
+}
+
+.zy-icon-afterSale:before {
+  content: "\e627";
+}
+
+.zy-icon-audits:before {
+  content: "\e628";
+}
+
+.zy-icon-authcode:before {
+  content: "\e629";
+}
+
+.zy-icon-bug1:before {
+  content: "\e62a";
+}
+
+.zy-icon-abnormal:before {
+  content: "\e62b";
+}
+
+.zy-icon-dashboard1:before {
+  content: "\e62c";
+}
+
+.zy-icon-dingdan1:before {
+  content: "\e62d";
+}
+
+.zy-icon-eye1:before {
+  content: "\e62e";
+}
+
+.zy-icon-delete:before {
+  content: "\e62f";
+}
+
+.zy-icon-fenlei:before {
+  content: "\e630";
+}
+
+.zy-icon-approval:before {
+  content: "\e631";
+}
+
+.zy-icon-getright:before {
+  content: "\e632";
+}
+
+.zy-icon-draw:before {
+  content: "\e633";
+}
+
+.zy-icon-banner:before {
+  content: "\e634";
+}
+
+.zy-icon-avatar:before {
+  content: "\e635";
+}
+
+.zy-icon-goods:before {
+  content: "\e636";
+}
+
+.zy-icon-home:before {
+  content: "\e637";
+}
+
+.zy-icon-finance:before {
+  content: "\e638";
+}
+
+.zy-icon-jxshang:before {
+  content: "\e639";
+}
+
+.zy-icon-logout1:before {
+  content: "\e63a";
+}
+
+.zy-icon-menu:before {
+  content: "\e63b";
+}
+
+.zy-icon-msg:before {
+  content: "\e63c";
+}
+
+.zy-icon-member:before {
+  content: "\e63d";
+}
+
+.zy-icon-order:before {
+  content: "\e63e";
+}
+
+.zy-icon-operate:before {
+  content: "\e63f";
+}
+
+.zy-icon-password1:before {
+  content: "\e640";
+}
+
+.zy-icon-seller:before {
+  content: "\e641";
+}
+
+.zy-icon-setting:before {
+  content: "\e642";
+}
+
+.zy-icon-service:before {
+  content: "\e643";
+}
+
+.zy-icon-user1:before {
+  content: "\e644";
+}
+
+.zy-icon-statistics:before {
+  content: "\e645";
+}
+
+.zy-icon-store:before {
+  content: "\e646";
+}
+
