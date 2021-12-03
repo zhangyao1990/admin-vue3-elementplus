@@ -6,7 +6,7 @@
 				v-model="currentTab"
 				type="card"
 				@tab-click="clickTab(currentTab)"
-				@tab-remove="closeSelectedTag($route)"
+				@tab-remove="closeSelectedTag"
 			>
 				<el-tab-pane
 					ref="tags"
@@ -104,16 +104,18 @@
 					this.currentTab = route.fullPath
 				}
 			},
-			//高亮tag
-			isActive(route) {
-				return route.fullPath === this.$route.fullPath
-			},
 			//关闭tag
 			closeSelectedTag(tag, autoPushLatestView = true) {
-				this.$store.commit("removeViewTags", tag)
-				this.$store.commit("removeIframeList", tag)
-				this.$store.commit("removeKeepLive", tag.name)
-				if (autoPushLatestView && this.isActive(tag)) {
+				let findItem = {}
+				if (autoPushLatestView) {
+					findItem = this.tagList.find((it) => it.fullPath === tag)
+				} else {
+					findItem = tag
+				}
+				this.$store.commit("removeViewTags", findItem)
+				this.$store.commit("removeIframeList", findItem)
+				this.$store.commit("removeKeepLive", findItem.name)
+				if (autoPushLatestView) {
 					const latestView = this.tagList.slice(-1)[0]
 					if (latestView) {
 						this.$router.push(latestView)
@@ -122,7 +124,7 @@
 					}
 				}
 			},
-			//tag右键
+			//tag操作
 			openContextMenu(tag) {
 				this.contextMenuItem = tag;
 				this.contextMenuVisible = true;
