@@ -195,6 +195,7 @@
 			window.addEventListener('resize', this.onLayoutResize);
 			var menu = this.$TOOL.data.get("MENU");
 			this.menu = this.filterUrl(menu);
+			this.$store.commit("SET_theme",this.$CONFIG.COLOR)
 			this.showThis()
 		},
 		watch: {

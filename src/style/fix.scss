@@ -13,7 +13,9 @@
 	top: 0px;
 	left: 0px;
 }
-
+.el-form-item__label {
+	font-size: 13px;
+}
 .el-form-item-msg {
 	font-size: 12px;
 	color: #999;
@@ -37,7 +39,6 @@
 	justify-content: space-between;
 	align-items: center;
 }
-
 .el-header .left-panel {
 	display: flex;
 	align-items: center;
@@ -60,6 +61,8 @@
 
 .el-main {
 	padding: 15px;
+	overflow-x: hidden;
+
 }
 
 .el-main.nopadding {
@@ -80,12 +83,22 @@
 	border-bottom: 0;
 	font-size: 17px;
 	font-weight: bold;
-	padding: 15px 20px 0px 20px;
+}
+
+.el-dialog__header {
+	padding: 12px 15px;
+	background-image: linear-gradient(
+			135deg, var(--el-color-primary-light-1) 10%, var(--el-color-primary-light-5)) !important;
 }
 
 .el-dialog__title {
 	font-size: 17px;
 	font-weight: bold;
+	color: #ffffff;
+}
+
+.zy-dialog__headerbtn .el-dialog__close {
+	color: #ffffff!important;
 }
 
 .el-drawer__header > :first-child {
@@ -103,6 +116,13 @@
 
 .el-input-number__decrease, .el-input-number__increase {
 	top: 2px;
+}
+
+.table-page-search-wrapper {
+	.el-input__inner {
+		font-size: 12px !important;
+		padding: 0 5px 0 5px;
+	}
 }
 
 .el-menu-item [class^=zy-icon-] {
@@ -297,6 +317,7 @@
 		padding: 0 30px;
 		position: relative;
 	}
+
 	.el-tabs__item.is-active {
 		background-color: var(--el-color-primary-light-8) !important;
 	}

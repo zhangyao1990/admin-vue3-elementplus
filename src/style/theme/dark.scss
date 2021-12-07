@@ -192,19 +192,23 @@
 			border-color: $--border-color;
 			color: $--text-color;
 		}
+
 		.el-tabs__item:hover {
 			background: $--background-translucent;
 			color: $--text-color;
 		}
+
 		.el-tabs__item.is-active:hover {
 			background: $--background-translucent;
 			color: var(--el-color-primary-light-1);
 		}
+
 		.el-tabs__item.is-active {
 			background: $--color;
 			color: var(--el-color-primary-light-4);
 		}
 	}
+
 	.drawerBG {
 		background: $--background;
 	}

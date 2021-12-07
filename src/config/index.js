@@ -66,6 +66,6 @@ const DEFAULT_CONFIG = {
 	LANG: 'zh-cn',
 
 	//主题颜色
-	COLOR: ''
+	COLOR: '#F5222D'
 }
 module.exports = DEFAULT_CONFIG

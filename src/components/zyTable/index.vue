@@ -282,7 +282,7 @@
 </script>
 
 <style scoped>
-	.zyTable {}
+	.zyTable {border-top: 1px solid #dcdfe6;}
 	.zyTable-table {height: calc(100% - 50px);}
 	.zyTable-page {height:50px;display: flex;align-items: center;justify-content: space-between;padding:0 15px;}
 	.zyTable-do {white-space: nowrap;}

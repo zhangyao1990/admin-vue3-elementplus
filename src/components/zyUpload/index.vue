@@ -18,7 +18,7 @@
 			</el-upload>
 		</div>
 		<el-dialog title="剪裁" v-model="cropperDialogVisible" :width="580" destroy-on-close>
-			<zy-cropper :src="cropperImg" :compress="compress" :aspectRatio="aspectRatio" ref="cropper"></zy-cropper>
+<!--			<zy-cropper :src="cropperImg" :compress="compress" :aspectRatio="aspectRatio" ref="cropper"></zy-cropper>-->
 			<template #footer>
 				<el-button @click="cropperDialogVisible=false" >取 消</el-button>
 				<el-button type="primary" @click="cropperSave">确 定</el-button>
