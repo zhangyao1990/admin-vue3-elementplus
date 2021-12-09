@@ -7,7 +7,8 @@
 		"sit": "vue-cli-service build --mode sit",
 		"test": "vue-cli-service build --mode test",
 		"build": "vue-cli-service build --report",
-		"lint": "vue-cli-service lint"
+		"lint": "vue-cli-service lint",
+		"push": "sh ./push.sh"
 	},
 	"dependencies": {
 		"@tinymce/tinymce-vue": "4.0.4",
