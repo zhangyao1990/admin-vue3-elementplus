@@ -24,9 +24,4 @@ then
 else
 	exit
 fi
-
-#自动压缩
-echo "等待压缩中......"
-winrar a dist.zip  dist
-echo "<<<<<<<<<<<<<<<<<<成功了>>>>>>>>>>>>>>>>>>"
 exit
