@@ -15,13 +15,4 @@ git push
 
 
 echo "代码提交成功!!!"
-echo "是否需要打包,请输入y/n"
-read buid
-if [ $buid = "y" ]
-then
-	echo "等待打包中......"
-    npm run build
-else
-	exit
-fi
 exit
